@@ -7,7 +7,7 @@ package basicoperations;
 
 /**
  *
- * @author Kevin Toapanta 
+ * @author Kevin Toapanta dir
  */
 public class BasicOperations {
 
