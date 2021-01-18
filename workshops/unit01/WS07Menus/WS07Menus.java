@@ -18,7 +18,7 @@ public class WS07Menus {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-    Scanner input = new Scanner (System.in);
+   Scanner input = new Scanner (System.in);
     boolean mainLoop = true;
     int option ;
     
@@ -39,19 +39,50 @@ public class WS07Menus {
          case 1:
              int addend1;
              int addend2;
-             int sum;
+             int sum = 0;
              System.out.println("enter addend 1 -> ");
              addend1 = input.nextInt();
              System.out.println("enter addend 2 -> ");
              addend2 = input.nextInt();
-             sum = addend1 + addend2;
+             int i;
+    i = 0;
+ 
+   
+    System.out.println("Multiplication Tables : 7");
+    int top=12;
+    int product=0;
+    int table=7;
+    for (int j = 1 ; j <= top ; j++){
+    product =table * j;
+    System.out.println("7 * " + j + " = " + product);
              System.out.println("The sum is -->" + sum);
              break;
-         case 2:
+         
+             case 2:
              System.out.println("The subtraction is ");
+             i = 0;
+ 
+   
+    System.out.println("Multiplication Tables : 7");
+    int top=12;
+    int product=0;
+    int table=7;
+    for (int j = 1 ; j <= top ; j++){
+    product =table * j;
+    System.out.println("7 * " + j + " = " + product);
              break;
          case 3:
              System.out.println("The multiplication is ");
+             i = 0;
+ 
+   
+    System.out.println("Multiplication Tables : 7");
+    int top=12;
+    int product=0;
+    int table=7;
+    for (int j = 1 ; j <= top ; j++){
+    product =table * j;
+    System.out.println("7 * " + j + " = " + product);
              break;
          case 4:
              System.out.println("The division is ");
@@ -73,7 +104,12 @@ public class WS07Menus {
     
               }
            } while (option!= 5);
-        }
-    }
+             
+             
+     
+         
+     
     
     
+              
+     
