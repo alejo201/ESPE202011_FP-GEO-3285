@@ -19,15 +19,15 @@ public class HW09EmbeddedStructures {
     public static void main(String[] args) {
         // TODO code application logic here
     Scanner teclado = new Scanner(System.in);
-        double number;
-        double operator;
-        double operator2;
-        double result;                                    
-        double residue;
-        double product;
-        double stop =12;
-        int option = 6 ; 
-        double k;
+        float number;
+        float  operator;
+        float operator2;
+        float result;                                    
+        float residue;
+        float product;
+        float  stop =12;
+        float option = 6 ; 
+        float  k;
       do {
        
           System.out.print("Enter First Number: ");
