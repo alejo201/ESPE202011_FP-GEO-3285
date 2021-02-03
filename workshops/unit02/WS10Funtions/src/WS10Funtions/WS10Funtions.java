@@ -3,20 +3,20 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package wso10funtions;
+package WS10Funtions;
 
 /**
  *
  * @author HP-LAPTOP-14
  */
-public class WSO10Funtions {
+public class WS10Funtions {
 
     /**
      * @param args the command line arguments
      */
-   public static void main(String[] args) {
-
-   int divd = 5;
+    public static void main(String[] args) {
+        // TODO code application logic here
+    int divd = 5;
         int divr = 10;
         float quotient = 0;
         int x = 0;
