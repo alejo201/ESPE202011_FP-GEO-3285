@@ -44,6 +44,7 @@ public class HW10Functions {
     System.out.println("↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓");
     System.out.println("    enter the  divisor   ");
     System.out.println("↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑");
+    divisor=input.nextInt ();
     quotient = divideTwoNumbers(dividend, divisor);
     System.out.println(" THE RESULT " + dividend + " and " + divisor + " is -> " + quotient); 
 
