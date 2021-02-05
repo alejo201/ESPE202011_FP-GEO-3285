@@ -121,7 +121,7 @@ public class HW10Functions {
 
         return number2;
     }
-     public static int tablemulriplication() {   
+     public static int showTheMultiplicationTable() {   
     System.out.println("↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓");
     System.out.println("The multiplication tables: ");
     System.out.println("↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑"); 
