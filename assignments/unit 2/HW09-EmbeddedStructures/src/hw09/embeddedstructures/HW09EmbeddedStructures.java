@@ -7,7 +7,7 @@ package hw09.embeddedstructures;
 
 import java.util.Scanner;
 
-/**
+ /**
  *
  * @author HP-LAPTOP-14
  */
