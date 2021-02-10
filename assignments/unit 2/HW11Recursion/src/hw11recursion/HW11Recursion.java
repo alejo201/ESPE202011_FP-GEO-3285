@@ -28,18 +28,8 @@ public class HW11Recursion {
                     double perimeter;
 
              do {
-            System.out.println("↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓");
-            System.out.println("↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓");
-            System.out.println("↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓");  
-            System.out.println(" ========= PEGAZUS =======");
-            System.out.println("↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑");
-            System.out.println("↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑");
-            System.out.println("↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑");
-            System.out.println("1. -> Perimeter of  Plot ");
-            System.out.println("2. -> Area of Surface");
-            System.out.println("3. -> Magnitude of an Earthquake");
-            System.out.println("4. -> Tidal Range");
-            System.out.println("5. -> Exit");
+            theProgramCover();
+            theMenu();
 
             System.out.println("Enter your menu option --> ");
             option = input.nextInt();
@@ -53,29 +43,19 @@ public class HW11Recursion {
                     break;
                 
                 case 2:
-                    double equivalentdistances;
-                    double bandwidth;
-                    double area;
-                    theAreaOfSurface(input);
+                    theAreaOFSurface(input);
                     break;
                
                 case 3:
-                    float amplitude;
-                    float timevariation;
-                    float magnitude;
-                    magnitudeOfAnEarthquake(input);
+                    theSeismicWave(input);
                     break;
                
                 case 4:
-                    float tallheight;
-                    float lowheight;
-                    float amplitude1;
                     waveRange(input);
                     break;
                
                 case 5:
-                    System.out.println(" THANKKS  ");
-                    System.exit(0);
+                     Goodbyemessage();
                     break;
                 default:
                     System.out.println("Invalid option\n\n\n");
@@ -88,7 +68,58 @@ public class HW11Recursion {
         
     }
 
-    private static void waveRange(Scanner input) {
+    public static void theMenu() {
+        System.out.println("option 1. -> Perimeter of  Plot ");
+        System.out.println("option 2. -> Area of Surface");
+        System.out.println("option 3. -> Magnitude of an Earthquake");
+        System.out.println("option 4. -> Tidal Range");
+        System.out.println("option 5. -> Exit");
+    }
+
+    public static void theProgramCover() {
+        System.out.println("↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓");
+        System.out.println("↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓");
+        System.out.println("↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓");
+        System.out.println(" ========= PEGAZUS =======");
+        System.out.println("↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑");
+        System.out.println("↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑");
+        System.out.println("↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑");
+    }
+
+    public static void  Goodbyemessage() {
+        System.out.println(" THANKKS  ");
+        System.exit(0);
+    }
+
+    public static void waveRange(Scanner input) {
+        float Tallheight;
+        float Lowheight;
+        float Amplitude1;
+        WaveRange(input);
+    }
+
+    public static void theSeismicWave(Scanner input) {
+        float Amplitude;
+        float Variation;
+        float Magnitude;
+        theSeismicwave(input);
+    }
+
+    public static void theAreaOFSurface(Scanner input) {
+        double Distances;
+        double Bandwidth;
+        double Area;
+        theAreaOfSurface(input);
+    }
+
+    private static void WaveRange(Scanner input) {
+        float tallheight;
+        float lowheight;
+        float amplitude1;
+        calculateWaveRange(input);
+    }
+
+    public static void calculateWaveRange(Scanner input) {
         float tallheight;
         float lowheight;
         float amplitude1;
@@ -106,7 +137,14 @@ public class HW11Recursion {
         System.out.println("↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑");
     }
 
-    private static void magnitudeOfAnEarthquake(Scanner input) {
+    private static void theSeismicwave(Scanner input) {
+        float amplitude;
+        float timevariation;
+        float magnitude;
+        calculateTheSeismicWave(input);
+    }
+
+    public static void calculateTheSeismicWave(Scanner input) {
         float amplitude;
         float timevariation;
         float magnitude;
@@ -128,6 +166,13 @@ public class HW11Recursion {
         double equivalentdistances;
         double bandwidth;
         double area;
+        calculateTheAreaOfSurface(input);
+    }
+
+    public static void calculateTheAreaOfSurface(Scanner input) {
+        double equivalentdistances;
+        double bandwidth;
+        double area;
         System.out.println("↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓");
         System.out.println(" Enter Equivalentdistances -> ");
         System.out.println("↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑");
@@ -144,6 +189,14 @@ public class HW11Recursion {
     }
 
     private static void  ThePerimeterOfPlot (Scanner input) {
+        double number1;
+        double number2;
+        double number3;
+        double perimeter;
+        calculateThePerimeterOfPlot(input);
+    }
+
+    public static void calculateThePerimeterOfPlot(Scanner input) {
         double number1;
         double number2;
         double number3;

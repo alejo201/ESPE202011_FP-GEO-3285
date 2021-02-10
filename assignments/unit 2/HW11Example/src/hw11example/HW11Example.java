@@ -19,9 +19,13 @@ public class HW11Example {
     public static void main(String[] args) {
         // TODO code application logic here
     Scanner leer = new Scanner(System.in);
-System.out.println("enter the number: ");
-int number1 = leer.nextInt();
-System.out.println("the factorial is "+number1+" is: "+theCalcularFactorial(number1));
+        showTheCalculaFactorial(leer);
+    }
+
+    public static void showTheCalculaFactorial(Scanner leer) {
+        System.out.println("enter the number: ");
+        int number1 = leer.nextInt();
+        System.out.println("the factorial is "+number1+" is: "+theCalcularFactorial(number1));
     }
     public static int theCalcularFactorial(int number1){
         int theCalcularFactorial =1;
