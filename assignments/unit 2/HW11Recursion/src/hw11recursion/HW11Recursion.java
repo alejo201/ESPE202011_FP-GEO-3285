@@ -19,205 +19,23 @@ public class HW11Recursion {
     public static void main(String[] args) {
         // TODO code application logic here
     Scanner input = new Scanner(System.in);
-        boolean mainLoop = true;
-        int option;
-        
-                    double number1;
-                    double number2;
-                    double number3;
-                    double perimeter;
-
-             do {
-            theProgramCover();
-            theMenu();
-
-            System.out.println("Enter your menu option --> ");
-            option = input.nextInt();
-         
+      String nombre,especie;
+        int weight, w= 0;
        
-           
-            switch (option) {
-
-                case 1:
-                     ThePerimeterOfPlot(input);
-                    break;
-                
-                case 2:
-                    theAreaOFSurface(input);
-                    break;
-               
-                case 3:
-                    theSeismicWave(input);
-                    break;
-               
-                case 4:
-                    waveRange(input);
-                    break;
-               
-                case 5:
-                     Goodbyemessage();
-                    break;
-                default:
-                    System.out.println("Invalid option\n\n\n");
-                    break;
-
+        Animal animales []= new Animal [100];
+        while (w<100){
+            System.out.println("Ingrese la categoria del animal");
+            nombre=entrada.nextLine();
+            System.out.println("Ingrese la especie");
+            especie= entrada.nextLine();
+            System.out.println("ingrese su peso");
+            weight = entrada.nextInt();
+            
+            if (weight>10){
+                animales[w]=new Animal( nombre,especie,weight);
+                w=w+1;
             }
-
-        } while (option != 5);
-        
-        
-    }
-
-    public static void theMenu() {
-        System.out.println("option 1. -> Perimeter of  Plot ");
-        System.out.println("option 2. -> Area of Surface");
-        System.out.println("option 3. -> Magnitude of an Earthquake");
-        System.out.println("option 4. -> Tidal Range");
-        System.out.println("option 5. -> Exit");
-    }
-
-    public static void theProgramCover() {
-        System.out.println("↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓");
-        System.out.println("↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓");
-        System.out.println("↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓");
-        System.out.println(" ========= PEGAZUS =======");
-        System.out.println("↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑");
-        System.out.println("↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑");
-        System.out.println("↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑");
-    }
-
-    public static void  Goodbyemessage() {
-        System.out.println(" THANKKS  ");
-        System.exit(0);
-    }
-
-    public static void waveRange(Scanner input) {
-        float Tallheight;
-        float Lowheight;
-        float Amplitude1;
-        WaveRange(input);
-    }
-
-    public static void theSeismicWave(Scanner input) {
-        float Amplitude;
-        float Variation;
-        float Magnitude;
-        theSeismicwave(input);
-    }
-
-    public static void theAreaOFSurface(Scanner input) {
-        double Distances;
-        double Bandwidth;
-        double Area;
-        theAreaOfSurface(input);
-    }
-
-    private static void WaveRange(Scanner input) {
-        float tallheight;
-        float lowheight;
-        float amplitude1;
-        calculateWaveRange(input);
-    }
-
-    public static void calculateWaveRange(Scanner input) {
-        float tallheight;
-        float lowheight;
-        float amplitude1;
-        System.out.println("↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓");
-        System.out.println("   Tallheight -> ");
-        System.out.println("↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑");
-        tallheight = input.nextFloat();
-        System.out.println("↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓");
-        System.out.println(" Lowheight -> ");
-        System.out.println("↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑");
-        lowheight = input.nextFloat();
-        amplitude1= tallheight - lowheight;
-        System.out.println("↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓");
-        System.out.println(" Tidal Range " + amplitude1);
-        System.out.println("↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑");
-    }
-
-    private static void theSeismicwave(Scanner input) {
-        float amplitude;
-        float timevariation;
-        float magnitude;
-        calculateTheSeismicWave(input);
-    }
-
-    public static void calculateTheSeismicWave(Scanner input) {
-        float amplitude;
-        float timevariation;
-        float magnitude;
-        System.out.println("↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓");
-        System.out.println(" Amplitude -> ");
-        System.out.println("↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑");
-        amplitude = input.nextFloat();
-        System.out.println("↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓");
-        System.out.println(" Time of varation -> ");
-        System.out.println("↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑");
-        timevariation = input.nextFloat();
-        magnitude = (float)(Math.log10(amplitude)+ 3 * Math.log10(8 * timevariation)-2.85);
-        System.out.println("↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓");
-        System.out.println(" Magnitude of an Earthquake " + magnitude);
-        System.out.println("↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑");
-    }
-
-    private static void theAreaOfSurface(Scanner input) {
-        double equivalentdistances;
-        double bandwidth;
-        double area;
-        calculateTheAreaOfSurface(input);
-    }
-
-    public static void calculateTheAreaOfSurface(Scanner input) {
-        double equivalentdistances;
-        double bandwidth;
-        double area;
-        System.out.println("↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓");
-        System.out.println(" Enter Equivalentdistances -> ");
-        System.out.println("↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑");
-        equivalentdistances = input.nextFloat();
-        System.out.println("↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓");
-        System.out.println(" Enter Bandwidth -> ");
-        System.out.println("↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑");
-        equivalentdistances = input.nextFloat();
-        bandwidth = input.nextFloat();
-        area = equivalentdistances*bandwidth ;
-        System.out.println("↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓");
-        System.out.println(" Area of Surface -->" + area);
-        System.out.println("↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑");
-    }
-
-    private static void  ThePerimeterOfPlot (Scanner input) {
-        double number1;
-        double number2;
-        double number3;
-        double perimeter;
-        calculateThePerimeterOfPlot(input);
-    }
-
-    public static void calculateThePerimeterOfPlot(Scanner input) {
-        double number1;
-        double number2;
-        double number3;
-        double perimeter;
-        System.out.println("↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓");
-        System.out.println(" Enter Side1 -> ");
-        System.out.println("↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑");
-        number1 = input.nextFloat();
-        System.out.println("↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓");
-        System.out.println(" Enter Side2 -> ");
-        System.out.println("↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑");
-        number2 = input.nextFloat();
-        System.out.println("↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓");
-        System.out.println(" Enter Side3 -> ");
-        System.out.println("↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑");
-        number3 = input.nextFloat();
-        perimeter = number1 + number2 + number3;
-        System.out.println("↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓");
-        System.out.println(" Perimeter of  Plot is --> " + perimeter);
-        System.out.println("↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑");
-    }
-    
-}
-dh
+        }
+        for (int i =0; i<100; i++);
+        int i = 0;
+        animales[i].mostrarAnimal();
