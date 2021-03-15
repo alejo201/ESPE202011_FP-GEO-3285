@@ -9,7 +9,7 @@ import java.util.Scanner;
 
 /**
  *
- * @author HP-LAPTOP-14
+ * @author Kevin Toapanta
  */
 public class HW10Functions {
 
